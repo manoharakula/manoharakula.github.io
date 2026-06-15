@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1500" role="img" aria-labelledby="title desc">
+  <title id="title">Forecasting signal grid</title>
+  <desc id="desc">Original dark transition background for forecasting, anomaly detection, and supply chain intelligence sections.</desc>
+  <defs>
+    <linearGradient id="background" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b0c10"/>
+      <stop offset="52%" stop-color="#17191f"/>
+      <stop offset="100%" stop-color="#24272d"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" stop-color="#0a84ff"/>
+      <stop offset="42%" stop-color="#f5f5f7"/>
+      <stop offset="72%" stop-color="#48a868"/>
+      <stop offset="100%" stop-color="#ff9f0a"/>
+    </linearGradient>
+    <pattern id="fineGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#f5f5f7" stroke-width="1" opacity="0.07"/>
+    </pattern>
+    <filter id="blurGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="2400" height="1500" fill="url(#background)"/>
+  <rect width="2400" height="1500" fill="url(#fineGrid)"/>
+  <g opacity="0.32" stroke="#f5f5f7" stroke-width="2">
+    <path d="M0 940C180 920 278 1014 430 1000C624 982 678 760 880 760C1060 760 1130 930 1310 914C1510 896 1560 680 1760 664C1984 646 2100 820 2400 760" fill="none"/>
+    <path d="M0 1120C230 1080 300 1238 520 1206C740 1174 775 960 980 972C1186 984 1210 1164 1408 1130C1630 1092 1698 910 1900 942C2104 974 2170 1088 2400 1060" fill="none"/>
+  </g>
+  <g filter="url(#blurGlow)">
+    <path d="M90 830C250 740 360 705 520 722C704 740 770 600 920 522C1080 438 1220 466 1378 590C1535 712 1680 714 1838 548C1962 418 2140 356 2310 320" fill="none" stroke="url(#signal)" stroke-width="18" stroke-linecap="round"/>
+  </g>
+  <g fill="#f5f5f7">
+    <circle cx="90" cy="830" r="18"/>
+    <circle cx="520" cy="722" r="18"/>
+    <circle cx="920" cy="522" r="18"/>
+    <circle cx="1378" cy="590" r="18"/>
+    <circle cx="1838" cy="548" r="18"/>
+    <circle cx="2310" cy="320" r="18"/>
+  </g>
+  <g opacity="0.96">
+    <rect x="220" y="220" width="420" height="260" rx="42" fill="#f5f5f7"/>
+    <rect x="740" y="980" width="410" height="252" rx="42" fill="#f5f5f7" opacity="0.92"/>
+    <rect x="1560" y="920" width="520" height="310" rx="46" fill="#f5f5f7" opacity="0.9"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M290 310h270M290 370h170" stroke="#1d1d1f" stroke-width="14"/>
+    <path d="M812 1075h258M812 1136h150" stroke="#1d1d1f" stroke-width="14"/>
+    <path d="M1645 1020h340M1645 1085h230" stroke="#1d1d1f" stroke-width="15"/>
+    <path d="M1670 1160c80-100 145-100 212 0c60 90 106 84 170-18" stroke="#0a84ff" stroke-width="12"/>
+  </g>
+  <g opacity="0.32" fill="#f5f5f7">
+    <circle cx="430" cy="1210" r="150"/>
+    <circle cx="2060" cy="210" r="210"/>
+  </g>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1500" role="img" aria-labelledby="title desc">
+  <title id="title">Supply chain data map</title>
+  <desc id="desc">Original abstract transition background showing logistics nodes, routes, and analytics signals.</desc>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#f7f8fa"/>
+      <stop offset="58%" stop-color="#e9ecef"/>
+      <stop offset="100%" stop-color="#d8dde3"/>
+    </radialGradient>
+    <linearGradient id="routeBlue" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a84ff"/>
+      <stop offset="55%" stop-color="#48a868"/>
+      <stop offset="100%" stop-color="#ff9f0a"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#1d1d1f" flood-opacity="0.12"/>
+    </filter>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#8d96a0" stroke-width="1" opacity="0.16"/>
+    </pattern>
+  </defs>
+  <rect width="2400" height="1500" fill="url(#glow)"/>
+  <rect width="2400" height="1500" fill="url(#grid)"/>
+  <g opacity="0.28">
+    <path d="M160 1180C460 940 620 900 900 880C1220 856 1420 620 1700 520C1920 442 2080 470 2260 360" fill="none" stroke="#5f6b76" stroke-width="2"/>
+    <path d="M240 360C560 450 750 610 930 740C1140 892 1390 900 1640 800C1860 712 2060 712 2240 860" fill="none" stroke="#5f6b76" stroke-width="2"/>
+    <path d="M300 980C610 760 850 650 1120 610C1410 566 1570 360 1870 300" fill="none" stroke="#5f6b76" stroke-width="2"/>
+  </g>
+  <g filter="url(#softShadow)">
+    <path d="M210 1110C470 882 717 804 1010 786C1238 772 1370 642 1538 520C1698 404 1900 360 2200 302" fill="none" stroke="url(#routeBlue)" stroke-width="18" stroke-linecap="round" opacity="0.9"/>
+    <path d="M320 420C640 500 780 682 1012 812C1238 938 1455 930 1658 820C1842 720 2030 742 2200 880" fill="none" stroke="#1d1d1f" stroke-width="12" stroke-linecap="round" opacity="0.82"/>
+    <path d="M370 1000C670 782 900 676 1160 642C1410 610 1544 420 1858 342" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.92"/>
+  </g>
+  <g>
+    <g fill="#1d1d1f">
+      <circle cx="210" cy="1110" r="26"/>
+      <circle cx="1010" cy="786" r="26"/>
+      <circle cx="1538" cy="520" r="26"/>
+      <circle cx="2200" cy="302" r="26"/>
+      <circle cx="320" cy="420" r="22"/>
+      <circle cx="1012" cy="812" r="22"/>
+      <circle cx="1658" cy="820" r="22"/>
+      <circle cx="2200" cy="880" r="22"/>
+    </g>
+    <g fill="#fff" stroke="#c7ccd1" stroke-width="3">
+      <rect x="530" y="245" width="330" height="190" rx="34"/>
+      <rect x="1284" y="1018" width="380" height="212" rx="36"/>
+      <rect x="1780" y="610" width="350" height="196" rx="34"/>
+    </g>
+    <g fill="none" stroke="#1d1d1f" stroke-linecap="round">
+      <path d="M588 330h214M588 374h146" stroke-width="12" opacity="0.8"/>
+      <path d="M1352 1108h240M1352 1156h172" stroke-width="13" opacity="0.82"/>
+      <path d="M1840 696h230M1840 740h138" stroke-width="12" opacity="0.78"/>
+    </g>
+    <g opacity="0.88">
+      <rect x="610" y="1030" width="88" height="220" rx="22" fill="#0a84ff"/>
+      <rect x="735" y="948" width="88" height="302" rx="22" fill="#48a868"/>
+      <rect x="860" y="862" width="88" height="388" rx="22" fill="#ff9f0a"/>
+      <rect x="985" y="780" width="88" height="470" rx="22" fill="#1d1d1f"/>
+    </g>
+  </g>
+  <circle cx="1900" cy="248" r="130" fill="#fff" opacity="0.32"/>
+  <circle cx="1900" cy="248" r="82" fill="none" stroke="#0a84ff" stroke-width="14" opacity="0.5"/>
+</svg>
